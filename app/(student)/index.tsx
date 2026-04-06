@@ -26,7 +26,7 @@ import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { Href, usePathname, useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import AttendanceCalendar from "./weeklymonthly";
-import FloatingNav from "../components/FloatingNav";
+import FloatingNav from "../../components/FloatingNav";
 
 const StudentApp = () => {
   const router = useRouter();

@@ -1,6 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, FlatList, SafeAreaView } from "react-native";
-import FloatingNav from "../components/FloatingNav";
+import { FlatList, SafeAreaView, StyleSheet, Text, View } from "react-native";
 
 const paymentData = [
   {
@@ -29,32 +28,32 @@ const paymentData = [
 export default function PaymentScreen() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-    <View style={styles.container}>
-      <Text style={styles.headerTitle}>Payment History</Text>
-      <FlatList
-        data={paymentData}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <View style={styles.paymentCard}>
-            <View>
-              <Text style={styles.paymentTitle}>{item.title}</Text>
-              <Text style={styles.paymentDate}>{item.date}</Text>
+      <View style={styles.container}>
+        <Text style={styles.headerTitle}>Payment History</Text>
+        <FlatList
+          data={paymentData}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <View style={styles.paymentCard}>
+              <View>
+                <Text style={styles.paymentTitle}>{item.title}</Text>
+                <Text style={styles.paymentDate}>{item.date}</Text>
+              </View>
+              <View style={{ alignItems: "flex-end" }}>
+                <Text style={styles.amountText}>{item.amount}</Text>
+                <Text
+                  style={[
+                    styles.statusText,
+                    { color: item.status === "Paid" ? "#4CAF50" : "#F44336" },
+                  ]}
+                >
+                  {item.status}
+                </Text>
+              </View>
             </View>
-            <View style={{ alignItems: "flex-end" }}>
-              <Text style={styles.amountText}>{item.amount}</Text>
-              <Text
-                style={[
-                  styles.statusText,
-                  { color: item.status === "Paid" ? "#4CAF50" : "#F44336" },
-                ]}
-              >
-                {item.status}
-              </Text>
-            </View>
-          </View>
-        )}
-      />
-    </View>
+          )}
+        />
+      </View>
     </SafeAreaView>
   );
 }
