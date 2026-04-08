@@ -1,23 +1,50 @@
-# 📱 Smart Attendance System (BLE & Face Recognition)
+# Welcome to your Expo app 👋
 
-An automated attendance tracking mobile application built for college environments. This project was developed for a **Techfest submission**.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## ✨ Key Features
+## Get started
 
-- **Smart Attendance:** Uses Bluetooth Low Energy (BLE) signals and Biometric Liveness Detection.
-- **Dynamic Dashboard:** Greeting changes based on time (Morning/Afternoon) with a real-time coin reward system.
-- **Floating Navigation:** Animated bottom tab bar with spring transitions.
-- **Management Hub:** Easily apply for leaves and track attendance records.
+1. Install dependencies
 
-## 🛠️ Tech Stack
+   ```bash
+   npm install
+   ```
 
-- **Framework:** React Native (Expo)
-- **Language:** TypeScript
-- **Icons:** Ionicons & MaterialCommunityIcons
-- **Animations:** React Native Animated API
+2. Start the app
 
-## 🚀 Installation
+   ```bash
+   npx expo start
+   ```
 
-1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/attendanceBLE.git`
-2. Install dependencies: `npm install`
-3. Start the app: `npx expo start`
+In the output, you'll find options to open the app in a
+
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
+
+```bash
+npm run reset-project
+```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
